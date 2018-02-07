@@ -339,7 +339,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609576925}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c4e2aa385692ce44e9e405527cd58fd7, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -377,6 +377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  jumpSpeed: 5
+  distToGround: 0.5
 --- !u!1 &1652268678
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +391,7 @@ GameObject:
   - component: {fileID: 1652268680}
   - component: {fileID: 1652268679}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,6 +474,7 @@ GameObject:
   - component: {fileID: 1680820279}
   - component: {fileID: 1680820278}
   - component: {fileID: 1680820277}
+  - component: {fileID: 1680820281}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -542,3 +545,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1680820281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680820276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c3060b525d5034f8e2e8b16866abb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
